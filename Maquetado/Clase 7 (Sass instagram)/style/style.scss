@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900');
+/*Extends*/
+
+@media screen and(max-width: 600px) {
+    %centrar{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    %between{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }
+    %around{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    @mixin tam($ancho, $alto) {
+        width: $ancho;
+        height: $alto;
+    }
+    
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    header{
+        height: 10vh;
+        background-color: beige;
+        @extend %between;
+        .header__username{
+            @include tam(30%,100% );
+            background-color: aquamarine;
+            @extend %centrar;
+        }
+        .header__nav{
+            @include tam(50%,100%);
+            @extend %centrar;
+            nav{
+                @include tam(50%,100%);
+            }
+            ul{
+                @include tam(100%,100%);
+                @extend %around;
+                height: 100%;
+                li{
+                    list-style: none;
+                    width: 20%;
+                    text-align: center;
+                    a{
+                        text-decoration: none;
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+}

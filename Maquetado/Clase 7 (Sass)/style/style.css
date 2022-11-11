@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900");
+@media screen and (max-width: 600px) {
+  body {
+    padding: 0;
+    margin: 0;
+    font-family: Roboto, sans-serif;
+  }
+  header {
+    height: 30wv;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #f6f6f6;
+  }
+  header .header__username {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding-left: 3vw;
+  }
+  header .header__nav {
+    width: 40%;
+    height: 100%;
+  }
+  header .header__nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+  }
+  header .header__nav ul li {
+    list-style: none;
+    width: 20%;
+    text-align: center;
+  }
+  header .header__nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+  }
+  main {
+    height: 20vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  main .main__picture {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  main .main__picture .imagen {
+    width: 55%;
+    height: 80%;
+    background-color: #000;
+    border: 1px solid #000;
+    border-radius: 100%;
+  }
+  main .main__stats {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  main .main__stats .main__stats--numbers {
+    text-align: center;
+    width: 30%;
+  }
+  main .main__stats .main__stats--numbers h3 {
+    margin: 0;
+  }
+  main .main__stats .main__stats--numbers h4 {
+    margin: 5 0 0 0;
+    color: #2e2c2c;
+    font-size: 12px;
+  }
+  main .main__bio h3 {
+    margin: 0;
+  }
+  main .main__bio p {
+    margin: 0;
+  }
+}/*# sourceMappingURL=style.css.map */
